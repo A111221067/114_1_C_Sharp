@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_09_17\\Tutorial_2_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F8776A8-BC2F-4BC6-96EB-97104BDA08B9}|Tutorial_2_3\\Tutorial_2_3.csproj|c:\\users\\m303\\desktop\\114_1_c_sharp\\114_09_17\\tutorial_2_3\\tutorial_2_3\\edgedrivertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F8776A8-BC2F-4BC6-96EB-97104BDA08B9}|Tutorial_2_3\\Tutorial_2_3.csproj|solutionrelative:tutorial_2_3\\edgedrivertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EdgeDriverTest.cs",
+              "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_09_17\\Tutorial_2_3\\Tutorial_2_3\\EdgeDriverTest.cs",
+              "RelativeDocumentMoniker": "Tutorial_2_3\\EdgeDriverTest.cs",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_09_17\\Tutorial_2_3\\Tutorial_2_3\\EdgeDriverTest.cs",
+              "RelativeToolTip": "Tutorial_2_3\\EdgeDriverTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:51:00.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
