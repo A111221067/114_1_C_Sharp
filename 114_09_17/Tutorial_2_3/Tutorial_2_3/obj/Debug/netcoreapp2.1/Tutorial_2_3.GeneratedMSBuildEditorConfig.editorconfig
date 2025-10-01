@@ -1,8 +1,5 @@
 is_global = true
 build_property.RootNamespace = Tutorial_2_3
-build_property.ProjectDir = C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_3\Tutorial_2_3\
+build_property.ProjectDir = C:\Users\Nick\OneDrive\桌面\114_1_C_Sharp\114_09_17\Tutorial_2_3\Tutorial_2_3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
