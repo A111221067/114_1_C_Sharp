@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Change_Counter
+{
+    public partial class Form1 : Form
+    {
+       
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // Add missing event handler methods
+        private void fiveCentsPictureBox_Click(object sender, EventArgs e)
+        {
+            // TODO: Add logic for 5 cents click
+        }
+
+        private void tenCentsPictureBox_Click(object sender, EventArgs e)
+        {
+            // TODO: Add logic for 10 cents click
+        }
+
+        private void twentyFiveCentsPictureBox_Click(object sender, EventArgs e)
+        {
+            // TODO: Add logic for 25 cents click
+        }
+
+        private void fiftyCentsPictureBox_Click(object sender, EventArgs e)
+        {
+            // TODO: Add logic for 50 cents click
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // TODO: Add logic for exit button click
+        }
+    }
+}

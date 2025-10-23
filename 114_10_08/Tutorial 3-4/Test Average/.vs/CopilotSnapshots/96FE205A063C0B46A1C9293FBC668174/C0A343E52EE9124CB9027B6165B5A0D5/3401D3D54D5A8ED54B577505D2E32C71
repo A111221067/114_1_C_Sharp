@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Test_Average
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            double score1, score2, score3, average;
+            bool valid1 = double.TryParse(test1TextBox.Text, out score1);
+            bool valid2 = double.TryParse(test2TextBox.Text, out score2);
+            bool valid3 = double.TryParse(test3TextBox.Text, out score3);
+            if (valid1 && valid2 && valid3)
+            {
+                average = (score1 + score2 + score3) / 3.0;
+                averageLabel.Text = average.ToString("F2");
+            }
+            else
+            {
+                MessageBox.Show("請輸入有效的分數！", "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            test1TextBox.Text = "";
+            test2TextBox.Text = "";
+            test3TextBox.Text = "";
+            averageLabel.Text = "";
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}
