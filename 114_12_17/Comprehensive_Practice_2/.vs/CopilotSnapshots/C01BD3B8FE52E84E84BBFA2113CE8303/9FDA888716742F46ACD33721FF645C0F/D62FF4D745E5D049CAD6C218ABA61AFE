@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Comprehensive_Practice_1
+{
+    // 主窗體類別：負責 UI 事件處理與商業邏輯（例如計算最高分）
+    public partial class Form1 : Form
+    {
+        // 建構子：初始化元件（由 Designer 產生的 InitializeComponent）
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // btnShowHighest_Click:
+        // 1. 從三個成績文字框（txtQuiz1/2/3）嘗試解析為 double
+        // 2. 若任一解析失敗，顯示錯誤訊息並中止處理
+        // 3. 若解析成功，計算三者中的最大值
+        // 4. 將姓名（姓+名）與最高分格式化後顯示在 lblResult 上
+        private void btnShowHighest_Click(object sender, EventArgs e)
+        {
+            double q1, q2, q3;
+            // 使用 TryParse 可避免拋出例外，若解析失敗會回傳 false
+            bool ok1 = double.TryParse(txtQuiz1.Text, out q1);
+            bool ok2 = double.TryParse(txtQuiz2.Text, out q2);
+            bool ok3 = double.TryParse(txtQuiz3.Text, out q3);
+
+            // 如果有任一成績不是數字，提示使用者並回傳（不繼續計算）
+            if (!ok1 || !ok2 || !ok3)
+            {
+                MessageBox.Show("請輸入有效的成績（數字）", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (q1 < 0 || q1 > 100 || q2 < 0 || q2 > 100 || q3 < 0 || q3 > 100)
+            {
+                MessageBox.Show("成績必須在0到100之間", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (string.IsNullOrWhiteSpace(txtFirstName.Text) || string.IsNullOrWhiteSpace(txtLastName.Text))
+            {
+                MessageBox.Show("請輸入姓名", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (txtFirstName.Text.Length > 10 || txtLastName.Text.Length > 10)
+            {
+                MessageBox.Show("姓名長度不可超過10個字元", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            // Math.Max 可兩兩比較，巢狀呼叫可取得三者最大值
+            double highest = Math.Max(q1, Math.Max(q2, q3));
+
+            // 將結果顯示在 lblResult，使用換行字元使輸出分成多列
+            // txtLastName 與 txtFirstName 為姓與名的輸入框
+            lblResult.Text = $"姓名: {txtLastName.Text}{txtFirstName.Text}\r\n最高分: {highest}";
+        }
+
+        // btnExit_Click: 關閉目前表單（結束應用程式視窗）
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            // Close() 會觸發表單的關閉程序與相關資源釋放
+            this.Close();
+        }
+    }
+}
