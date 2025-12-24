@@ -144,9 +144,8 @@
             this.matchResultLabel.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.matchResultLabel.Location = new System.Drawing.Point(464, 335);
             this.matchResultLabel.Name = "matchResultLabel";
-            this.matchResultLabel.Size = new System.Drawing.Size(59, 32);
+            this.matchResultLabel.Size = new System.Drawing.Size(0, 32);
             this.matchResultLabel.TabIndex = 10;
-            this.matchResultLabel.Text = "161";
             // 
             // prizeLabel
             // 
@@ -154,9 +153,8 @@
             this.prizeLabel.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.prizeLabel.Location = new System.Drawing.Point(464, 425);
             this.prizeLabel.Name = "prizeLabel";
-            this.prizeLabel.Size = new System.Drawing.Size(59, 32);
+            this.prizeLabel.Size = new System.Drawing.Size(0, 32);
             this.prizeLabel.TabIndex = 11;
-            this.prizeLabel.Text = "161";
             // 
             // Form1
             // 
