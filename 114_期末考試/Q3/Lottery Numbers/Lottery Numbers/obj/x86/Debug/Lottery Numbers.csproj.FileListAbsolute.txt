@@ -50,3 +50,14 @@ C:\Users\m303\Desktop\Tutorial 7-1\Lottery Numbers\Lottery Numbers\obj\x86\Debug
 C:\Users\m303\Desktop\Tutorial 7-1\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.csproj.CoreCompileInputs.cache
 C:\Users\m303\Desktop\Tutorial 7-1\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.exe
 C:\Users\m303\Desktop\Tutorial 7-1\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\bin\Debug\Lottery Numbers.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\bin\Debug\Lottery Numbers.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\bin\Debug\Lottery Numbers.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery_Numbers.Form1.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery_Numbers.Properties.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_期末考試\Q3\Lottery Numbers\Lottery Numbers\obj\x86\Debug\Lottery Numbers.pdb

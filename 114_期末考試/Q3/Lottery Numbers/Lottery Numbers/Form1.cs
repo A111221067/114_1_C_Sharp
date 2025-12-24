@@ -92,35 +92,58 @@ namespace Lottery_Numbers
         // 核心比對方法
         private void CheckAndMatch()
         {
+            // 確保「產生號碼」與「開獎號碼」都已完成
             if (!hasUserNumbers || !hasWinningNumbers) return;
 
             int matchCount = 0;
-            // 使用基本語法進行比對判定
-            for (int i = 0; i < 5; i++)
+            string matchedList = ""; // 用於儲存中獎的號碼字串
+
+            // 使用基本巢狀迴圈進行比對
+            for (int i = 0; i < userNumbers.Length; i++)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < winningNumbers.Length; j++)
                 {
                     if (userNumbers[i] == winningNumbers[j])
                     {
                         matchCount++;
+
+                        // 格式化中獎號碼字串，若不是第一個號碼則加上逗號
+                        if (matchedList == "")
+                            matchedList += userNumbers[i].ToString();
+                        else
+                            matchedList += ", " + userNumbers[i].ToString();
+
                         break;
                     }
                 }
             }
 
-            // 顯示結果
+            // 1. 顯示中獎個數
             matchResultLabel.Text = $"中{matchCount}個號碼";
 
-            // 根據中獎數量判定獎項等級
-            if (matchCount == 5) prizeLabel.Text = "🤑 頭獎！";
-            else if (matchCount == 4) prizeLabel.Text = "😮 二獎！";
-            else if (matchCount == 3) prizeLabel.Text = "😊 三獎！";
-            else prizeLabel.Text = "😞 沒中獎";
+            // 2. 顯示中獎號碼 (取代原本的獎項判定)
+            if (matchCount > 0)
+            {
+                prizeLabel.Text = $"中獎號碼：{matchedList}";
+            }
+            else
+            {
+                prizeLabel.Text = "😞 沒中獎";
+            }
+
+            // 確保顏色為紅色 (對應截圖要求)
+            matchResultLabel.ForeColor = System.Drawing.Color.Red;
+            prizeLabel.ForeColor = System.Drawing.Color.Red;
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

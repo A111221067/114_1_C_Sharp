@@ -99,7 +99,7 @@
             // generateButton
             // 
             this.generateButton.Location = new System.Drawing.Point(286, 227);
-            this.generateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.generateButton.Margin = new System.Windows.Forms.Padding(4);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(116, 57);
             this.generateButton.TabIndex = 5;
@@ -110,7 +110,7 @@
             // exitButton
             // 
             this.exitButton.Location = new System.Drawing.Point(470, 227);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(125, 57);
             this.exitButton.TabIndex = 6;
@@ -142,19 +142,21 @@
             // 
             this.matchResultLabel.AutoSize = true;
             this.matchResultLabel.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.matchResultLabel.Location = new System.Drawing.Point(557, 331);
+            this.matchResultLabel.Location = new System.Drawing.Point(464, 335);
             this.matchResultLabel.Name = "matchResultLabel";
-            this.matchResultLabel.Size = new System.Drawing.Size(0, 32);
+            this.matchResultLabel.Size = new System.Drawing.Size(59, 32);
             this.matchResultLabel.TabIndex = 10;
+            this.matchResultLabel.Text = "161";
             // 
             // prizeLabel
             // 
             this.prizeLabel.AutoSize = true;
             this.prizeLabel.Font = new System.Drawing.Font("新細明體", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.prizeLabel.Location = new System.Drawing.Point(557, 410);
+            this.prizeLabel.Location = new System.Drawing.Point(464, 425);
             this.prizeLabel.Name = "prizeLabel";
-            this.prizeLabel.Size = new System.Drawing.Size(0, 32);
+            this.prizeLabel.Size = new System.Drawing.Size(59, 32);
             this.prizeLabel.TabIndex = 11;
+            this.prizeLabel.Text = "161";
             // 
             // Form1
             // 
@@ -172,9 +174,10 @@
             this.Controls.Add(this.thirdLabel);
             this.Controls.Add(this.secondLabel);
             this.Controls.Add(this.firstLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Lottery Numbers";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
